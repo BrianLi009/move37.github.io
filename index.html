@@ -19,7 +19,6 @@
             </div>
             <div class="nav-right">
                 <a href="#subscribe" class="nav-link">Subscribe</a>
-                <a href="#basket" class="nav-link">Basket</a>
             </div>
         </nav>
     </header>
@@ -28,7 +27,7 @@
     <main class="main-content">
         <div class="content-grid">
             <!-- Left Column - Podcast Visual -->
-            <div class="left-column">
+            <div class="left-column" id="about">
                 <div class="podcast-visual">
                     <div class="image-container">
                         <img src="move37_black.png" alt="Move37 Podcast" class="podcast-image">
@@ -40,79 +39,85 @@
                 </div>
             </div>
 
-            <!-- Right Column - Product Details -->
+            <!-- Right Column - Podcast Details -->
             <div class="right-column">
                 <div class="product-info">
                     <h1 class="product-title">Move37 Podcast</h1>
                     <div class="product-meta">
-                        <span class="catalog">MOVE37POD001</span>
-                        <span class="release-date">15 December 2024</span>
+                        <span class="catalog">Weekly conversations on AI, research, and builders</span>
+                        <span class="release-date">New episodes every week</span>
                     </div>
 
-                    <!-- Audio Section -->
-                    <div class="product-section">
-                        <h2 class="section-title">AUDIO</h2>
+                    <!-- Listen Section -->
+                    <div class="product-section" id="listen">
+                        <h2 class="section-title">LISTEN</h2>
+                        <div style="margin-top:12px; margin-bottom:16px;">
+                            <audio controls style="width:100%; max-width: 500px; border:1px solid #ffffff;">
+                                <source src="" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
                         <div class="format-options">
                             <div class="format-option">
                                 <div class="format-info">
+                                    <span class="format-label">Stream</span>
+                                    <span class="format-details">Play the latest episode</span>
+                                </div>
+                                <div class="price-action">
+                                    <span class="price">&nbsp;</span>
+                                    <button class="add-to-basket" disabled>Coming Soon</button>
+                                </div>
+                            </div>
+                            <div class="format-option">
+                                <div class="format-info">
                                     <span class="format-label">MP3</span>
-                                    <span class="format-details">320 kbps, LAME-encoded</span>
+                                    <span class="format-details">Download for offline listening</span>
                                 </div>
                                 <div class="price-action">
-                                    <span class="price">$0.00</span>
-                                    <button class="add-to-basket">Listen</button>
+                                    <span class="price">&nbsp;</span>
+                                    <button class="add-to-basket" disabled>Coming Soon</button>
                                 </div>
                             </div>
                             <div class="format-option">
                                 <div class="format-info">
-                                    <span class="format-label">WAV / FLAC</span>
-                                    <span class="format-details">16-bit Lossless</span>
+                                    <span class="format-label">Transcript</span>
+                                    <span class="format-details">Episode notes & highlights</span>
                                 </div>
                                 <div class="price-action">
-                                    <span class="price">$0.00</span>
-                                    <button class="add-to-basket">Listen</button>
-                                </div>
-                            </div>
-                            <div class="format-option">
-                                <div class="format-info">
-                                    <span class="format-label">WAV (24-bit)</span>
-                                    <span class="format-details">24-bit Lossless</span>
-                                </div>
-                                <div class="price-action">
-                                    <span class="price">$0.00</span>
-                                    <button class="add-to-basket">Listen</button>
+                                    <span class="price">&nbsp;</span>
+                                    <button class="add-to-basket" disabled>Coming Soon</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Latest Episode Section -->
-                    <div class="product-section">
+                    <div class="product-section" id="episodes">
                         <h2 class="section-title">LATEST EPISODE</h2>
                         <div class="episode-info">
-                            <h3 class="episode-title">The Future of AI Research</h3>
+                            <h3 class="episode-title">Episodes Coming Soon</h3>
                             <div class="episode-meta">
-                                <span class="duration">45 min</span>
-                                <span class="date">Dec 15, 2024</span>
+                                <span class="duration">Stay tuned</span>
+                                <span class="date">Launching soon</span>
                             </div>
                             <p class="episode-description">
-                                Exploring cutting-edge developments in artificial intelligence and what it means for researchers and students in the field.
+                                We're putting the finishing touches on the first episodes. Subscribe to get notified when we launch.
                             </p>
                             <div class="episode-actions">
-                                <button class="play-button">
+                                <button class="play-button" disabled>
                                     <span class="play-icon">▶</span>
-                                    <span>Play</span>
+                                    <span>Coming Soon</span>
                                 </button>
-                                <button class="share-button">
+                                <button class="share-button" disabled>
                                     <span class="share-icon">⤴</span>
-                                    <span>Share</span>
+                                    <span>Coming Soon</span>
                                 </button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Subscribe Section -->
-                    <div class="product-section">
+                    <div class="product-section" id="subscribe">
                         <h2 class="section-title">SUBSCRIBE</h2>
                         <div class="subscribe-options">
                             <div class="platform-option">
@@ -133,6 +138,14 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Contact Section -->
+                    <div class="product-section" id="contact">
+                        <h2 class="section-title">CONTACT</h2>
+                        <p class="episode-description">
+                            Booking, collaborations, and feedback: hello@move37.fm
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,7 +154,7 @@
     <!-- Bottom Section -->
     <footer class="footer">
         <div class="footer-content">
-            <span class="footer-text">DIGITAL TRACKLIST</span>
+            <span class="footer-text">Move37 Podcast • New episodes weekly</span>
         </div>
     </footer>
 
